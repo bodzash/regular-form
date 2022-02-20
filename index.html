@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <form id="form">
+            <h1>Native JS Form</h1>
+
+            <input class="text" id="firstName" type="text" name="firstName" placeholder="First Name">
+            
+            <input class="text" id="lastName" type="text" name="lastName" placeholder="Last Name">
+            
+            <input class="text" id="email" type="email" name="email" placeholder="E-Mail">
+            
+            <input class="text" id="password" type="password" name="password" placeholder="Password">
+            
+            <textarea id="textarea" name="textarea" rows="4" placeholder="Type your comment here"></textarea>
+            
+            <div class="checkbox-wrapper">
+                <input id="checkbox" type="checkbox" name="checkbox">
+                <label for="checkbox">Subscribe me to the newsletter</label>
+            </div>
+
+            <fieldset class="fieldset">
+                <legend>Your employement status</legend>
+
+                <div class="radio-wrapper">
+                    <input type="radio" value="unemployed" name="employment" id="unemployed">
+                    <label for="unemployed">Unemployed</label>
+                </div>
+    
+                <div class="radio-wrapper">
+                    <input type="radio" value="part-time" name="employment" id="part-time">
+                    <label for="part-time">Part-Time</label>
+                </div>
+ 
+                <div class="radio-wrapper">
+                <input type="radio" value="full-time" name="employment" id="full-time">
+                <label for="full-time">Full-Time</label>
+                </div>
+
+            </fieldset>
+
+            <label for="select">What's your favorite color?</label>
+
+            <select name="select" id="select">
+                <option value="">-- Select one --</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+
+            <div class="warning" data-show="false">Please fill out every field!</div>
+            <div class="succes" data-show="false">Registered succesfully!</div>
+            <button id="submit" type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

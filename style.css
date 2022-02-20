@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text {
+    padding: .3rem;
+}
+
+textarea {
+    padding: .3rem;
+    resize: none;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.container > h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin: 0.5rem 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+input:focus, select:focus {
+    outline: 0;
+}
+
+select {
+    padding: 0.3rem;
+}
+
+option {
+    padding: 0.3rem;
+}
+
+button {
+    border: 0;
+    background-color: royalblue;
+    color: white;
+    border-radius: .4rem;
+    padding: 0.5rem;
+}
+
+.warning {
+    display: none;
+    color: red;
+    text-align: center;
+    font-weight: 900;
+}
+
+.warning[data-show="true"] {
+    display: block;
+}
+
+
+.succes {
+    display: none;
+    color: green;
+    text-align: center;
+    font-weight: 900;
+}
+
+.succes[data-show="true"] {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    /*:root {
+        font-size: 16px;
+    }*/
+}
